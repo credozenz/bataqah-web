@@ -1,12 +1,7 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Bebas_Neue, Inter, Montserrat, Poppins } from 'next/font/google';
 import { Toaster } from 'sonner';
-// TypeScript does not provide declarations for CSS side-effect imports.
-// @ts-expect-error CSS is processed by Next.js at build time.
 import './globals.css';
-import { Montserrat } from 'next/font/google';
-import { Bebas_Neue } from 'next/font/google';
-import { Poppins } from 'next/font/google';
 
 const inter = Inter({ subsets: ['latin'] });
 const montserrat = Montserrat({
