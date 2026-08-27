@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import { Toaster } from 'sonner';
+// TypeScript does not provide declarations for CSS side-effect imports.
+// @ts-expect-error CSS is processed by Next.js at build time.
 import './globals.css';
 import { Montserrat } from 'next/font/google';
 import { Bebas_Neue } from 'next/font/google';
@@ -24,8 +26,8 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: 'Jaab NFC',
-  description: 'Digital Business Cards by Jaab',
+  title: 'Bataqah',
+  description: 'Digital Business Cards by bataqah',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

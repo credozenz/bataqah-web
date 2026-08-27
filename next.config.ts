@@ -17,6 +17,10 @@ const nextConfig: NextConfig = {
         protocol: 'https',
         hostname: 'manage.jaabnfcsmartbusinesscard.com',
       },
+      {
+        protocol: 'https',
+        hostname: 'manage.bataqah.com',
+      },
     ],
     unoptimized: appConfigs.image.unoptimized,
   },

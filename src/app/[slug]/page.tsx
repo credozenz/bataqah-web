@@ -19,8 +19,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     const awaitedParams = await params;
     const { data } = await getProfileData(awaitedParams.slug);
 
-    const title = data.name ? `${data.name} | Jaab NFC` : 'Jaab NFC';
-    const description = data.description || 'Digital Business Card by Jaab NFC';
+    const title = data.name ? `${data.name} | Bataqah` : 'Bataqah';
+    const description = data.description || 'Digital Business Card by Bataqah';
 
     return {
       title,
@@ -29,20 +29,20 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
         title,
         description,
         images: data.profile_image ? [{ url: data.profile_image }] : [],
-        siteName: 'Jaab NFC',
+        siteName: 'bataqah',
       },
       twitter: {
         card: 'summary_large_image',
         title,
         description,
         images: data.profile_image ? [data.profile_image] : [],
-        site: '@jaabcards',
+        site: '@bataqah',
       },
     };
   } catch {
     return {
-      title: 'Jaab NFC',
-      description: 'Digital Business Card by Jaab NFC',
+      title: 'Bataqah',
+      description: 'Digital Business Card by Bataqah',
     };
   }
 }
